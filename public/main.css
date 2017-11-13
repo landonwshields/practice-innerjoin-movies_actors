@@ -1,0 +1,8 @@
+body{
+  background-color: lightgrey;
+}
+
+main{
+  display: flex;
+  justify-content: space-around;
+}

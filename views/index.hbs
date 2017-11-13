@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Movies-People-Practice</title>
+    <link rel="stylesheet" href="/main.css">
+  </head>
+  <body>
+    <main>
+      <div>
+        <h1>Movies</h1>
+        {{#each movies}}
+          <h3>{{title}}</h3>
+          <p>Director: {{name}}</p>
+        {{/each}}
+      </div>
+      <div>
+        <h1>People</h1>
+        {{#each people}}
+          <h3>Name: {{name}}</h3>
+          <p>Role: {{role}}</p>
+        {{/each}}
+      </div>
+    </main>
+
+  </body>
+</html>
