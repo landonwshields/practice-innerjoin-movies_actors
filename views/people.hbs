@@ -20,6 +20,11 @@
             <h1>People</h1>
           </a>
         </section>
+        {{#each people}}
+          <h3>Name: {{name}}</h3>
+          <p>Appearing in: {{title}}</p>
+          <p>Role: {{role}}</p>
+        {{/each}}
       </div>
     </main>
   </body>

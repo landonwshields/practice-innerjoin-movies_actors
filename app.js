@@ -10,21 +10,31 @@ app.use(express.static('public'))
 app.use(methodOverride("_method"))
 
 
-app.get('/', (req, res) => {
+
+app.get('/', function (req, res) {
+   res.render('index')
+})
+
+app.get('/movies', (req, res) => {
   queries.getMovies()
     .then(movies => {
       console.log(movies);
-        queries.getPeople()
-          .then(people => {
-            console.log(people);
-              res.render('index', {
-                movies: movies,
-                people: people
-            })
-          })
+        res.render('movies', {
+          movies: movies,
+        })
     })
 })
- 
+
+app.get('/people', (req, res) => {
+  queries.getPeople()
+    .then(people => {
+      console.log(people);
+        res.render('people', {
+          people: people
+        })
+    })
+})
+
 
 
 

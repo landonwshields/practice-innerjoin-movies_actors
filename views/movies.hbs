@@ -13,6 +13,10 @@
             <h1>Movies</h1>
           </a>
         </section>
+        {{#each movies}}
+          <h3>{{title}}</h3>
+          <p>Director: {{name}}</p>
+        {{/each}}
       </div>
       <div>
         <section>

@@ -8,22 +8,22 @@ exports.seed = function(knex, Promise) {
         {
           id: 1,
           name: 'Orlando Bloom',
-          role: 'actor'
+          role: 'Actor'
         },
         {
           id: 2,
           name: 'Christopher Nolan',
-          role: 'director'
+          role: 'Director'
         },
         {
           id: 3,
           name: 'Quentin Tarantino',
-          role: 'director'
+          role: 'Director'
         },
         {
           id: 4,
           name: 'Peter Jackson',
-          role: 'director'
+          role: 'Director'
         }
       ]);
     });
